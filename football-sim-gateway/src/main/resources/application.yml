@@ -1,0 +1,10 @@
+spring:
+  main:
+   web-application-type: reactive
+  cloud:
+    gateway:
+      routes:
+      - id: auction-house
+        uri: http://localhost:8080
+        predicates:
+        - Path=

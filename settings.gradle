@@ -1,3 +1,4 @@
 rootProject.name = 'football-sim'
 
 include 'auction-house'
+include 'football-sim-gateway'
