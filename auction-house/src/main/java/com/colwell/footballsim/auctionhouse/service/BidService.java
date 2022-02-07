@@ -1,5 +1,6 @@
 package com.colwell.footballsim.auctionhouse.service;
 
+import java.util.Date;
 import java.util.UUID;
 
 import com.colwell.footballsim.auctionhouse.entity.Bid;
@@ -15,10 +16,13 @@ public class BidService {
     private BidRepository bidRepository;
 
     public Bid createBid(Bid bid) {
+        Date createDate = new Date();
+        bid.setCreatedDate(createDate);
+        bid.setLastModifieDate(createDate);
         return bidRepository.save(bid);
     }
 
-    public Bid getBid(UUID uuid) {
+    public Bid getBid(String uuid) {
         return bidRepository.findById(uuid).get();
     }
 }

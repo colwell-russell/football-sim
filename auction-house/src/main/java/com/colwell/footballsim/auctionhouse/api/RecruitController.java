@@ -1,13 +1,11 @@
 package com.colwell.footballsim.auctionhouse.api;
 
-import javax.websocket.server.PathParam;
-
 import com.colwell.footballsim.auctionhouse.entity.Recruit;
 import com.colwell.footballsim.auctionhouse.service.RecruitService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -24,7 +22,7 @@ public class RecruitController {
     }
 
     @GetMapping("/{id}")
-    public Recruit getRecruitById(@PathParam("id") String id) {
+    public Recruit getRecruitById(@PathVariable("id") String id) {
         return recruitService.getRecruit(id);
     }
 
