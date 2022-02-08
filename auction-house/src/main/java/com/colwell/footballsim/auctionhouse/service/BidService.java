@@ -1,7 +1,6 @@
 package com.colwell.footballsim.auctionhouse.service;
 
 import java.util.Date;
-import java.util.UUID;
 
 import com.colwell.footballsim.auctionhouse.entity.Bid;
 import com.colwell.footballsim.auctionhouse.repository.BidRepository;

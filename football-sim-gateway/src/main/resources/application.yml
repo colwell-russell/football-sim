@@ -5,6 +5,6 @@ spring:
     gateway:
       routes:
       - id: auction-house
-        uri: http://localhost:8080
+        uri: http://localhost:8081/auction-house
         predicates:
-        - Path=
+        - Path=/auction-house/**
