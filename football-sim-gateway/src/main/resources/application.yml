@@ -5,6 +5,8 @@ spring:
    web-application-type: reactive
   cloud:
     gateway:
+      metrics:
+        enabled: true
       routes:
       - id: auction-house
         uri: lb://auction-house
