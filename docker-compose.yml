@@ -1,0 +1,18 @@
+version: "3.9"  # optional since v1.27.0
+services:
+  auction-house:
+    build: auction-house/.
+    ports:
+      - "8081:8081"
+    environment:
+      - EUREKA_CLIENT_URL=http://football-sim-eureka:8761/eureka
+  football-sim-eureka:
+    build: football-sim-eureka/.
+    ports:
+      - "8761:8761"
+  football-sim-gateway:
+    build: football-sim-gateway/.
+    ports:
+      - "8080:8080"
+    environment:
+      - EUREKA_CLIENT_URL=http://football-sim-eureka:8761/eureka
