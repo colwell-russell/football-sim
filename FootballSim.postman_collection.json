@@ -15,7 +15,13 @@
 							"type": "noauth"
 						},
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJuZkMxd2JXNjhMdVNYNVYtUVJHcDMtUi1ZMkR5TTVyOUtCYUI1ZGtzbDBnIn0.eyJleHAiOjE2NDU0NjY5MDAsImlhdCI6MTY0NTQ2NjMwMCwianRpIjoiMWFkMjhmY2UtNjE4YS00MzRiLWFiYjYtMWYzYmJiNzJkNWE4IiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDAwL2F1dGgvcmVhbG1zL21hc3RlciIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiIwNWM3NjgzMy01MTFlLTQ3NjYtYjdhMS1hZWQ2MDA5YTE2YzQiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJmb290YmFsbC1zaW0tdGVzdCIsInNlc3Npb25fc3RhdGUiOiI0N2VmMWNjZC0xYWM1LTQwNjQtOTZhZi1jZjU5OTU2YTA2ZTUiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHA6Ly9sb2NhbGhvc3Q6ODA4MCJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiU0FNUExFX1JPTEVfMSIsImRlZmF1bHQtcm9sZXMtbWFzdGVyIiwib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJzaWQiOiI0N2VmMWNjZC0xYWM1LTQwNjQtOTZhZi1jZjU5OTU2YTA2ZTUiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6InRlc3QgdXNlciIsInByZWZlcnJlZF91c2VybmFtZSI6InRlc3R1c2VyMSIsImdpdmVuX25hbWUiOiJ0ZXN0IiwiZmFtaWx5X25hbWUiOiJ1c2VyIn0.cjGzuUx5u5LyX_2Y2Vk-yDz-9BV1jmUd1gtvNvw6E2qyiaTHGwzDCdSrmvaiLjZnXegO677G0RMRKl0GjEMs58-LCv_GjoYtFBA68XxLpKe46DKQCBj8H8_05_3Vbaup_sos-NK1nzL5JPM1nU5nNg2cf9G_7K8DMmUmqBV3YdLNbg0EPs7H4I4m52vjGQO95Rd4Rd52-QJZxEBHqgajC_MOmls4QRPcjPksQCU05VCZqGsv9Fo29mlGN5YRyQqKhqS3Nyjg6VemZmjL1DuAtz4xQUzu9n5wdWmJlB9wcrm5ihwzOVWhGEuRhnWLpt-tECGkUfbH8hWUmdK9l30Zzg\",\"expires_in\":600,\"refresh_expires_in\":1800,\"refresh_token\":\"eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICIzM2JiNDRkNi04MTQyLTRhNTktODNjNC0xYjNlMmQ5NjM3MDAifQ.eyJleHAiOjE2NDU0NjgxMDAsImlhdCI6MTY0NTQ2NjMwMCwianRpIjoiNzUwNWNjOTUtNzc5Zi00OGZhLWE3ZTctMTdkMTAzMjU3MTI1IiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDAwL2F1dGgvcmVhbG1zL21hc3RlciIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6OTAwMC9hdXRoL3JlYWxtcy9tYXN0ZXIiLCJzdWIiOiIwNWM3NjgzMy01MTFlLTQ3NjYtYjdhMS1hZWQ2MDA5YTE2YzQiLCJ0eXAiOiJSZWZyZXNoIiwiYXpwIjoiZm9vdGJhbGwtc2ltLXRlc3QiLCJzZXNzaW9uX3N0YXRlIjoiNDdlZjFjY2QtMWFjNS00MDY0LTk2YWYtY2Y1OTk1NmEwNmU1Iiwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjQ3ZWYxY2NkLTFhYzUtNDA2NC05NmFmLWNmNTk5NTZhMDZlNSJ9.pOW_Mjevpwp5X5P3Yyz0DCw7cjdk_fg7mZAs8JqrBro\",\"token_type\":\"Bearer\",\"id_token\":\"eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJuZkMxd2JXNjhMdVNYNVYtUVJHcDMtUi1ZMkR5TTVyOUtCYUI1ZGtzbDBnIn0.eyJleHAiOjE2NDU0NjY5MDAsImlhdCI6MTY0NTQ2NjMwMCwiYXV0aF90aW1lIjowLCJqdGkiOiIxYzQ4YWFmYS1iYzVmLTQyMTctYWFmMS05NzJkM2NlNjgzMTgiLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwMDAvYXV0aC9yZWFsbXMvbWFzdGVyIiwiYXVkIjoiZm9vdGJhbGwtc2ltLXRlc3QiLCJzdWIiOiIwNWM3NjgzMy01MTFlLTQ3NjYtYjdhMS1hZWQ2MDA5YTE2YzQiLCJ0eXAiOiJJRCIsImF6cCI6ImZvb3RiYWxsLXNpbS10ZXN0Iiwic2Vzc2lvbl9zdGF0ZSI6IjQ3ZWYxY2NkLTFhYzUtNDA2NC05NmFmLWNmNTk5NTZhMDZlNSIsImF0X2hhc2giOiJtdDRUcVdpQ3Bqa0hJZjZITFZQdlpnIiwiYWNyIjoiMSIsInNpZCI6IjQ3ZWYxY2NkLTFhYzUtNDA2NC05NmFmLWNmNTk5NTZhMDZlNSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJuYW1lIjoidGVzdCB1c2VyIiwicHJlZmVycmVkX3VzZXJuYW1lIjoidGVzdHVzZXIxIiwiZ2l2ZW5fbmFtZSI6InRlc3QiLCJmYW1pbHlfbmFtZSI6InVzZXIifQ.QlKeKNb2LzPSJOPeIkTJicqXnHkrCsKJfapxkPSFMH4IyaSURPvHBJLZTANgl0AXpOG769QG63X3yw6-YEkcM206Xxh8aUoJeFbWAP6CzJV0E5PcbDDnhpFzzzHS0wB4-bw3gwHPKoCE4WUyHNB-4PC57txikme2zTERcE6LsNIXEG8LZ-oizfFCVTqXR9oWcxKg7PwT4cGNskU1goXyReOTtPr0HhTfiqAHAsHx_dHkR20SFet6k6nwzf016ldFdb_JlA2MfzapGRqL6tOMyAvREXhV-UNb_N66d-FzAzIOpoG3pzA9kcLVet4giNDIje6oOY9AgMEJoce7kWErPA",
+								"type": "text"
+							}
+						],
 						"url": {
 							"raw": "http://localhost:8080/auction-house/v1/recruit/all",
 							"protocol": "http",
@@ -65,20 +71,30 @@
 									"key": "client_id",
 									"value": "football-sim-test",
 									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "glE7WR7DTHg7HFxaPYr0wRwTM7NgnydJ",
+									"type": "text"
+								},
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
 								}
 							]
 						},
 						"url": {
-							"raw": "http://localhost:9001/auth/realms/baeldung/protocol/openid-connect/token",
+							"raw": "http://localhost:9000/auth/realms/master/protocol/openid-connect/token",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "9001",
+							"port": "9000",
 							"path": [
 								"auth",
 								"realms",
-								"baeldung",
+								"master",
 								"protocol",
 								"openid-connect",
 								"token"
