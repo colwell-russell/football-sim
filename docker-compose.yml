@@ -1,5 +1,33 @@
 version: "3.9"  # optional since v1.27.0
 services:
+  keycloak:
+    image: bitnami/keycloak:latest
+    container_name: keycloak
+    expose:
+      - "5432"
+      - "8080"
+    ports:
+      - "5432:5432"
+      - "9000:8080"
+    depends_on:
+      - keycloak-db
+    environment:
+      KEYCLOAK_CREATE_ADMIN_USER: true
+      KEYCLOAK_ADMIN_USER: user
+      KEYCLOAK_ADMIN_PASSWORD: bitnami
+      KEYCLOAK_MANAGEMENT_USER: manager
+      KEYCLOAK_MANAGEMENT_PASSWORD: bitnami1
+      KEYCLOAK_HTTP_PORT: 8062
+      KEYCLOAK_DATABASE_HOST: keycloak-db
+      KEYCLOAK_DATABASE_PASSWORD: example
+  keycloak-db:
+    image: postgres
+    restart: always
+    environment:
+      ALLOW_EMPTY_PASSWORD: yes
+      POSTGRES_USER: bn_keycloak
+      POSTGRES_PASSWORD: example
+      POSTGRES_DB: bitnami_keycloak
   auction-house:
     build: auction-house/.
     ports:

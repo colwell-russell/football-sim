@@ -3,6 +3,13 @@ spring:
     name: football-sim-gateway
   main:
    web-application-type: reactive
+  security:
+    oauth2:
+      resourceserver:
+        opaquetoken:
+          introspection-uri: http://keycloak:9000/auth/realms/master/protocol/openid-connect/token/introspect
+          client-id: football-sim-test
+          client-secret: glE7WR7DTHg7HFxaPYr0wRwTM7NgnydJ
   cloud:
     gateway:
       metrics:
@@ -12,6 +19,8 @@ spring:
         uri: lb://auction-house
         predicates:
         - Path=/auction-house/**
+        filters:
+          - TokenRelay=
 eureka:
   client:
     serviceUrl:

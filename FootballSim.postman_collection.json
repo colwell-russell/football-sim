@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "4d33bde3-3bc2-4068-a04d-fb6da0e812ee",
+		"name": "FootballSim",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "RecruitAPI",
+			"item": [
+				{
+					"name": "Get Available Recruits",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/auction-house/v1/recruit/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auction-house",
+								"v1",
+								"recruit",
+								"all"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "keystone",
+			"item": [
+				{
+					"name": "GetToken",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "scope",
+									"value": "email roles profile",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "testuser1",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "football-sim-test",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:9001/auth/realms/baeldung/protocol/openid-connect/token",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"auth",
+								"realms",
+								"baeldung",
+								"protocol",
+								"openid-connect",
+								"token"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

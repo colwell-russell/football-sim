@@ -1,6 +1,13 @@
 spring:
   application:
     name: auction-house
+  security:
+    oauth2:
+      resourceserver:
+        opaquetoken:
+          introspection-uri: http://keycloak/auth/realms/master/protocol/openid-connect/token/introspect
+          client-id: football-sim-test
+          client-secret: glE7WR7DTHg7HFxaPYr0wRwTM7NgnydJ
   h2: 
     console:
       enabled: true
