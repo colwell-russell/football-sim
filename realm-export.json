@@ -659,7 +659,7 @@
       "enabled": true,
       "alwaysDisplayInConsole": false,
       "clientAuthenticatorType": "client-secret",
-      "secret": "**********",
+      "secret": "4X1h0FEPp04x4z6MmWyJcMN1xppuKbm4",
       "redirectUris": [
         "http://localhost:8080/*"
       ],
@@ -700,10 +700,6 @@
         "saml.authnstatement": "false",
         "display.on.consent.screen": "false",
         "saml.onetimeuse.condition": "false"
-      },
-      "authenticationFlowBindingOverrides": {
-        "direct_grant": "7ffec8a1-d2f8-4d38-831a-5be79b156232",
-        "browser": "cce14783-eb86-48da-9822-92cb0922bcef"
       },
       "fullScopeAllowed": true,
       "nodeReRegistrationTimeout": -1,

@@ -33,7 +33,8 @@ services:
     ports:
       - "8081:8081"
     environment:
-      - EUREKA_CLIENT_URL=http://football-sim-eureka:8761/eureka
+      EUREKA_CLIENT_URL: http://football-sim-eureka:8761/eureka
+      OAUTH_INTROSPECT_URL: http://keycloak/auth/realms/master/protocol/openid-connect/token/introspect
   football-sim-eureka:
     build: football-sim-eureka/.
     ports:
@@ -43,4 +44,5 @@ services:
     ports:
       - "8080:8080"
     environment:
-      - EUREKA_CLIENT_URL=http://football-sim-eureka:8761/eureka
+      EUREKA_CLIENT_URL: http://football-sim-eureka:8761/eureka
+      OAUTH_INTROSPECT_URL: http://keycloak/auth/realms/master/protocol/openid-connect/token/introspect
