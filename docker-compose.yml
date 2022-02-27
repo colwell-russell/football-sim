@@ -12,6 +12,7 @@ services:
     depends_on:
       - keycloak-db
     environment:
+      KEYCLOAK_LOGLEVEL: ALL
       KEYCLOAK_CREATE_ADMIN_USER: true
       KEYCLOAK_ADMIN_USER: user
       KEYCLOAK_ADMIN_PASSWORD: bitnami
@@ -22,27 +23,26 @@ services:
       KEYCLOAK_DATABASE_PASSWORD: example
   keycloak-db:
     image: postgres
-    restart: always
     environment:
       ALLOW_EMPTY_PASSWORD: yes
       POSTGRES_USER: bn_keycloak
       POSTGRES_PASSWORD: example
       POSTGRES_DB: bitnami_keycloak
-  # auction-house:
-  #   build: auction-house/.
-  #   ports:
-  #     - "8081:8081"
+  auction-house:
+    build: auction-house/.
+    ports:
+      - "8081:8081"
     environment:
       EUREKA_CLIENT_URL: http://football-sim-eureka:8761/eureka
-      OAUTH_INTROSPECT_URL: http://keycloak:9000/auth/realms/master/protocol/openid-connect/token/introspect
+      OAUTH_INTROSPECT_URL: http://keycloak:8080/auth/realms/master/protocol/openid-connect/token/introspect
   football-sim-eureka:
     build: football-sim-eureka/.
     ports:
       - "8761:8761"
-  # football-sim-gateway:
-  #   build: football-sim-gateway/.
-  #   ports:
-  #     - "8080:8080"
-  #   environment:
-  #     EUREKA_CLIENT_URL: http://football-sim-eureka:8761/eureka
-  #     OAUTH_INTROSPECT_URL: http://keycloak:9000/auth/realms/master/protocol/openid-connect/token/introspect
+  football-sim-gateway:
+    build: football-sim-gateway/.
+    ports:
+      - "8080:8080"
+    environment:
+      EUREKA_CLIENT_URL: http://football-sim-eureka:8761/eureka
+      OAUTH_INTROSPECT_URL: http://keycloak:8080/auth/realms/master/protocol/openid-connect/token/introspect
