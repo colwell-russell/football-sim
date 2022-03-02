@@ -31,6 +31,9 @@ public class Bid {
     @GenericGenerator(name = "uuid2", strategy = "org.hibernate.id.UUIDGenerator")
     @Column(name = "BID_ID", columnDefinition = "VARCHAR(255)")
     private String bidId;
+
+    @Column(name = "USER_ID",columnDefinition = "VARCHAR(255)")
+    private String userId;
     
     @Column(name = "AMOUNT")
     private BigDecimal amount;

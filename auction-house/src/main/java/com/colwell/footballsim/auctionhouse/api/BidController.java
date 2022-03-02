@@ -4,6 +4,7 @@ import com.colwell.footballsim.auctionhouse.entity.Bid;
 import com.colwell.footballsim.auctionhouse.service.BidService;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -18,8 +19,9 @@ public class BidController {
     @Autowired
     private BidService bidService;
 
-    @PostMapping
-    public Bid createBid(@RequestBody Bid bid) {
+    @PostMapping("/{uuid}")
+    public Bid createBid(@RequestBody Bid bid, Authentication authentication) {
+        bid.setUserId(authentication.getName());
         return bidService.createBid(bid);
     }
 
