@@ -88,7 +88,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI0bUM1SWpaeVpkV292Qm9yeHVMWDJHNEp4Sk1nQjZ4a0FxRHFsNGRxR3dRIn0.eyJleHAiOjE2NDYzMTM0MzUsImlhdCI6MTY0NjMxMjgzNSwianRpIjoiN2ZjMWY5MGUtNmRkZi00NTViLTkwYWEtNWY4ODlhN2MxMTE5IiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDAwL2F1dGgvcmVhbG1zL21hc3RlciIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI4YTNmNTA4OS0yODRkLTQ3MTQtODYyMC1kMDk1NGM2NjFjNTkiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJmb290YmFsbC1zaW0tdGVzdCIsInNlc3Npb25fc3RhdGUiOiI5ZDE2MmUyNy05ZmQwLTRkZTYtYTk0MC1mYTlhODY1NTU1NzIiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHA6Ly9sb2NhbGhvc3Q6ODA4MCJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1tYXN0ZXIiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwic2lkIjoiOWQxNjJlMjctOWZkMC00ZGU2LWE5NDAtZmE5YTg2NTU1NTcyIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ0ZXN0dXNlcjEifQ.Fk4TOdkr5PdcbNuwhJ9TYcQuuNEE96--jSS1WWYpKV8F0OFhbk1CSzRaLYzAZ_r1_2JIGxsfKlUHN0DJDUrv7DtHD_iRPA_oPsd5gXva-O3p69ZtNV5RVWcNhwUZVmUD3SFB-pxqiN7msUOQ7_KzM1M5F1Cd86maRg-xgpKhtTeFSUYQk1xwAHt2pGndalQNRYTq1Noxtsc7Jg-knqKRqfhZj-K5KiQC_H9eTIfNQfOPwAk7HXkOCuPg8unmp7aE5s9laeL5tLo1iSIYz0jAgldNosLNmFnGpC2SyRjWqSbfWjbKxvp5ACYiq-SczkJY90bNseT-BRszi0ioyUpZBQ",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI0bUM1SWpaeVpkV292Qm9yeHVMWDJHNEp4Sk1nQjZ4a0FxRHFsNGRxR3dRIn0.eyJleHAiOjE2NDYzMTM2NjYsImlhdCI6MTY0NjMxMzA2NiwianRpIjoiMGNkMzM4NzktNTY1MS00YjA3LTllM2QtMDRiMjQ5MWNjODBlIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDAwL2F1dGgvcmVhbG1zL21hc3RlciIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI4YTNmNTA4OS0yODRkLTQ3MTQtODYyMC1kMDk1NGM2NjFjNTkiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJmb290YmFsbC1zaW0tdGVzdCIsInNlc3Npb25fc3RhdGUiOiI2MDA3YzVlNS1jOWIwLTQ2NTAtODRlNi00YzI0OTcxZTdkYTEiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHA6Ly9sb2NhbGhvc3Q6ODA4MCJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1tYXN0ZXIiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwic2lkIjoiNjAwN2M1ZTUtYzliMC00NjUwLTg0ZTYtNGMyNDk3MWU3ZGExIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ0ZXN0dXNlcjEifQ.yxsGgWOOqkhjBF0wJAqYiKr3Jh19LOSIJvXmJe9UKaj1lXTsMgUc7SS7H842JolzGffbVT5GY98dZX8rSBd6zuSa_mTCevR6BNfiI71yEFQdrFSvA0YHEBBhAryc184679tikS6d1IHLYO-irwbwH016xJGHxuNgFC4tckHEMOf4a1uOvGulK4C5nE_aT3-dXllkm4NjrPrHwsCZ4VGj53ii6ilx-Ta5TIu5bxy1dl7A7dU6I0_VngZQQ1A9a9xbkDCfj-TtEeAqd-atZhwmoiNCvIj9HmwfqR4ydaN9Uwij7Ek8ESED_Ifu7lid6Sb4gWV571ArsdI75-qXak_2Ng",
 									"type": "string"
 								}
 							]
@@ -108,6 +108,39 @@
 								"bid",
 								"recruit",
 								"123e4567-e89b-12d3-a456-426614174000"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Bids for User Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI0bUM1SWpaeVpkV292Qm9yeHVMWDJHNEp4Sk1nQjZ4a0FxRHFsNGRxR3dRIn0.eyJleHAiOjE2NDYzMTM2NjYsImlhdCI6MTY0NjMxMzA2NiwianRpIjoiMGNkMzM4NzktNTY1MS00YjA3LTllM2QtMDRiMjQ5MWNjODBlIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDAwL2F1dGgvcmVhbG1zL21hc3RlciIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI4YTNmNTA4OS0yODRkLTQ3MTQtODYyMC1kMDk1NGM2NjFjNTkiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJmb290YmFsbC1zaW0tdGVzdCIsInNlc3Npb25fc3RhdGUiOiI2MDA3YzVlNS1jOWIwLTQ2NTAtODRlNi00YzI0OTcxZTdkYTEiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHA6Ly9sb2NhbGhvc3Q6ODA4MCJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1tYXN0ZXIiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwic2lkIjoiNjAwN2M1ZTUtYzliMC00NjUwLTg0ZTYtNGMyNDk3MWU3ZGExIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ0ZXN0dXNlcjEifQ.yxsGgWOOqkhjBF0wJAqYiKr3Jh19LOSIJvXmJe9UKaj1lXTsMgUc7SS7H842JolzGffbVT5GY98dZX8rSBd6zuSa_mTCevR6BNfiI71yEFQdrFSvA0YHEBBhAryc184679tikS6d1IHLYO-irwbwH016xJGHxuNgFC4tckHEMOf4a1uOvGulK4C5nE_aT3-dXllkm4NjrPrHwsCZ4VGj53ii6ilx-Ta5TIu5bxy1dl7A7dU6I0_VngZQQ1A9a9xbkDCfj-TtEeAqd-atZhwmoiNCvIj9HmwfqR4ydaN9Uwij7Ek8ESED_Ifu7lid6Sb4gWV571ArsdI75-qXak_2Ng",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/auction-house/v1/bid/user/GRABTHATKEYSHAREONE",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auction-house",
+								"v1",
+								"bid",
+								"user",
+								"GRABTHATKEYSHAREONE"
 							]
 						}
 					},
