@@ -1,6 +1,7 @@
 package com.colwell.footballsim.auctionhouse.api;
 
 import com.colwell.footballsim.auctionhouse.entity.Bid;
+import com.colwell.footballsim.auctionhouse.enums.BidStatusEnum;
 import com.colwell.footballsim.auctionhouse.service.BidService;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,8 +21,10 @@ public class BidController {
     private BidService bidService;
 
     @PostMapping("/{uuid}")
-    public Bid createBid(@RequestBody Bid bid, Authentication authentication) {
+    public Bid createBid(@PathVariable("uuid") String recruitId, @RequestBody Bid bid, Authentication authentication) {
         bid.setUserId(authentication.getName());
+        bid.setRecruitId(recruitId);
+        bid.setStatus(BidStatusEnum.OPEN.name());
         return bidService.createBid(bid);
     }
 
