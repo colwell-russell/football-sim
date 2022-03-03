@@ -38,6 +38,80 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Create Bid",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI0bUM1SWpaeVpkV292Qm9yeHVMWDJHNEp4Sk1nQjZ4a0FxRHFsNGRxR3dRIn0.eyJleHAiOjE2NDYyNjg5MTIsImlhdCI6MTY0NjI2ODMxMiwianRpIjoiZTdjZjUxNTYtYzRkZS00MDlhLTljNmUtNmM5Yzg0MTFiYjM4IiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDAwL2F1dGgvcmVhbG1zL21hc3RlciIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI4YTNmNTA4OS0yODRkLTQ3MTQtODYyMC1kMDk1NGM2NjFjNTkiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJmb290YmFsbC1zaW0tdGVzdCIsInNlc3Npb25fc3RhdGUiOiIwYzQ4ZWMwMi0yYjJmLTQ0OTAtYjgyOC00ZDc2MDY4ZTI4MjMiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHA6Ly9sb2NhbGhvc3Q6ODA4MCJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1tYXN0ZXIiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwic2lkIjoiMGM0OGVjMDItMmIyZi00NDkwLWI4MjgtNGQ3NjA2OGUyODIzIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ0ZXN0dXNlcjEifQ.qO6kjKwreclQ9aGjCf46M2ojkAnsnnt_FtEUiekWxdJrqxdL-KfiaqwwqQG277R9j9vADdy7eMURBegryOpGX23DPhT_r9tJ6q1L6w-Q9c1acCGecAikBrJNV4WipYqLxrStCOA78AZSYf2zUdpcYSl_mI_ev9QLTgtIKD9lIXWQ4hxldl4xOQVBU1JDLHz2ppRuL7FYE0S6hF6Yf1skVv3GfdWiyleDMxhNSRpethQowUsTnoh82CNj2Sbqxxg8cIqFBw5jZLlF9AiobpMlZgMj_YgITMSYfFOrtWhQxsmHlRW7svLHd4Ur-HHBAPTcXbzotX_6sMg17L3CStx6jQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"amount\": 56.80\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/auction-house/v1/bid/123e4567-e89b-12d3-a456-426614174000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auction-house",
+								"v1",
+								"bid",
+								"123e4567-e89b-12d3-a456-426614174000"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Bids for Recruit Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI0bUM1SWpaeVpkV292Qm9yeHVMWDJHNEp4Sk1nQjZ4a0FxRHFsNGRxR3dRIn0.eyJleHAiOjE2NDYzMTM0MzUsImlhdCI6MTY0NjMxMjgzNSwianRpIjoiN2ZjMWY5MGUtNmRkZi00NTViLTkwYWEtNWY4ODlhN2MxMTE5IiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDAwL2F1dGgvcmVhbG1zL21hc3RlciIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI4YTNmNTA4OS0yODRkLTQ3MTQtODYyMC1kMDk1NGM2NjFjNTkiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJmb290YmFsbC1zaW0tdGVzdCIsInNlc3Npb25fc3RhdGUiOiI5ZDE2MmUyNy05ZmQwLTRkZTYtYTk0MC1mYTlhODY1NTU1NzIiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHA6Ly9sb2NhbGhvc3Q6ODA4MCJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1tYXN0ZXIiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwic2lkIjoiOWQxNjJlMjctOWZkMC00ZGU2LWE5NDAtZmE5YTg2NTU1NTcyIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ0ZXN0dXNlcjEifQ.Fk4TOdkr5PdcbNuwhJ9TYcQuuNEE96--jSS1WWYpKV8F0OFhbk1CSzRaLYzAZ_r1_2JIGxsfKlUHN0DJDUrv7DtHD_iRPA_oPsd5gXva-O3p69ZtNV5RVWcNhwUZVmUD3SFB-pxqiN7msUOQ7_KzM1M5F1Cd86maRg-xgpKhtTeFSUYQk1xwAHt2pGndalQNRYTq1Noxtsc7Jg-knqKRqfhZj-K5KiQC_H9eTIfNQfOPwAk7HXkOCuPg8unmp7aE5s9laeL5tLo1iSIYz0jAgldNosLNmFnGpC2SyRjWqSbfWjbKxvp5ACYiq-SczkJY90bNseT-BRszi0ioyUpZBQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/auction-house/v1/bid/recruit/123e4567-e89b-12d3-a456-426614174000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auction-house",
+								"v1",
+								"bid",
+								"recruit",
+								"123e4567-e89b-12d3-a456-426614174000"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
@@ -74,7 +148,7 @@
 								},
 								{
 									"key": "client_secret",
-									"value": "glE7WR7DTHg7HFxaPYr0wRwTM7NgnydJ",
+									"value": "4X1h0FEPp04x4z6MmWyJcMN1xppuKbm4",
 									"type": "text"
 								},
 								{
@@ -98,6 +172,31 @@
 								"protocol",
 								"openid-connect",
 								"token"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Config Server",
+			"item": [
+				{
+					"name": "Get Config",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8888/config-client/master",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"config-client",
+								"master"
 							]
 						}
 					},

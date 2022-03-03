@@ -32,4 +32,14 @@ public class BidController {
     public Bid getBid(@PathVariable("uuid") String uuid) {
         return bidService.getBid(uuid);
     }
+
+    @GetMapping("/recruit/{uuid}")
+    public Iterable<Bid> getBidsForRecruit(@PathVariable("uuid") String recruitId) {
+        return bidService.getBidsForRecruit(recruitId);
+    }
+
+    @GetMapping("/user/{uuid}")
+    public Iterable<Bid> getBidsForUser(@PathVariable("uuid") String userId) {
+        return bidService.getBidsForUser(userId);
+    }
 }

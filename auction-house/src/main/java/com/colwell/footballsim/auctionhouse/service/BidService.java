@@ -24,4 +24,12 @@ public class BidService {
     public Bid getBid(String uuid) {
         return bidRepository.findById(uuid).get();
     }
+
+    public Iterable<Bid> getBidsForRecruit(String recruitId) {
+        return bidRepository.findAllByRecruiId(recruitId);
+    } 
+
+    public Iterable<Bid> getBidsForUser(String userId) {
+        return bidRepository.findAllByUserId(userId);
+    }
 }
