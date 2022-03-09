@@ -1,4 +1,4 @@
-package com.colwell.footballsim.auctionhouse.entity;
+package com.colwell.footballsim.footballsimcoachmanagement.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -18,16 +18,22 @@ import lombok.ToString;
 @EqualsAndHashCode
 @ToString
 @Entity
-@Table(name = "RECRUIT")
-public class Recruit {
+@Table(name = "COACH")
+public class Coach {
 
     @Id
     @GeneratedValue(generator = "uuid2")
     @GenericGenerator(name = "uuid2", strategy = "org.hibernate.id.UUIDGenerator")
-    @Column(name = "RECRUIT_ID", columnDefinition = "VARCHAR(255)")
-    private String recruitId;
+    @Column(name = "COACH_ID", columnDefinition = "VARCHAR(255)")
+    private String coachId;
 
-    @Column(name = "NAME")
-    private String name;
+    @Column(name = "FIRST_NAME",columnDefinition = "VARCHAR(255)")
+    private String firstName;
 
+    @Column(name = "LAST_NAME",columnDefinition = "VARCHAR(255)")
+    private String lastName;
+
+    @Column(name = "STATUS",columnDefinition = "VARCHAR(255)")
+    private String status;
+    
 }
