@@ -23,6 +23,9 @@ spring:
     database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
       ddl-auto: none
+  sql:
+    init:
+      mode: always
 server:
   port: 8081
 eureka:
