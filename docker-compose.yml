@@ -41,6 +41,21 @@ services:
       DATASOURCE_PASSWORD: password
     depends_on:
       - keycloak
+      - football-sim-db
+  football-sim-coach-management:
+    build: football-sim-coach-management/.
+    ports: 
+      - "8082:8082"
+    environment:
+      EUREKA_CLIENT_URL: http://football-sim-eureka:8761/eureka
+      OAUTH_INTROSPECT_URL: http://keycloak:8080/auth/realms/master/protocol/openid-connect/token/introspect
+      DATASOURCE_DRIVER_CLASS_NAME: com.mysql.jdbc.Driver
+      DATASOURCE_URL: 'jdbc:mysql://football-sim-db:3306/football-sim-db'
+      DATASOURCE_USERNAME: user
+      DATASOURCE_PASSWORD: password
+    depends_on:
+      - keycloak
+      - football-sim-db
   football-sim-db:
     image: mysql
     ports:

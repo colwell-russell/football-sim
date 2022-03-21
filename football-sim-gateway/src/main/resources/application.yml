@@ -21,6 +21,12 @@ spring:
         - Path=/auction-house/**
         filters:
           - TokenRelay=
+      - id: coach-management
+        url: lb://football-sim-coach-management
+        predicates:
+        - Path=/football-sim-coach-management/**
+        filters:
+          - TokenRelay=
 eureka:
   client:
     serviceUrl:
